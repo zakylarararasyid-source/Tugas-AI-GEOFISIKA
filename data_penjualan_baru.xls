@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Antigravity AI</Author>
+  <Created>2026-10-27T00:00:00Z</Created>
+  <Company>Sales Intelligence</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="TitleStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16" ss:Color="#1E3A8A" ss:Bold="1"/>
+   <Alignment ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="SubtitleStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#475569" ss:Italic="1"/>
+   <Alignment ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="HeaderStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#1E3A8A" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#0F172A"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#0F172A"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#0F172A"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#0F172A"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="SubHeaderStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#3B82F6" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="RowStyle">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="RowAltStyle">
+   <Interior ss:Color="#F8FAFC" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="CurrencyStyle">
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="CurrencyAltStyle">
+   <Interior ss:Color="#F8FAFC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="PercentStyle">
+   <NumberFormat ss:Format="0.00&quot;%&quot;"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="PercentAltStyle">
+   <Interior ss:Color="#F8FAFC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0.00&quot;%&quot;"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="NumberStyle">
+   <NumberFormat ss:Format="#,##0"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="NumberAltStyle">
+   <Interior ss:Color="#F8FAFC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="#,##0"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="CenterStyle">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="CenterAltStyle">
+   <Interior ss:Color="#F8FAFC" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E2E8F0"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="TotalStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0F172A" ss:Bold="1"/>
+   <Interior ss:Color="#E2E8F0" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#0F172A"/>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" ss:Color="#0F172A"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="TotalCurrencyStyle">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0F172A" ss:Bold="1"/>
+   <Interior ss:Color="#E2E8F0" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#0F172A"/>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" ss:Color="#0F172A"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="KpiCardHeader">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="10" ss:Color="#64748B" ss:Bold="1"/>
+   <Interior ss:Color="#F1F5F9" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="KpiCardValue">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#0F172A" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CBD5E1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CBD5E1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CBD5E1"/>
+   </Borders>
+  </Style>
+ </Styles>
+
+ <!-- WORKSHEET 1: RINGKASAN EKSEKUTIF & KPI -->
+ <Worksheet ss:Name="Ringkasan_KPI">
+  <Table ss:ExpandedColumnCount="8" ss:DefaultRowHeight="20">
+   <Column ss:Width="150"/>
+   <Column ss:Width="130"/>
+   <Column ss:Width="130"/>
+   <Column ss:Width="120"/>
+   <Column ss:Width="120"/>
+   <Column ss:Width="120"/>
+   <Column ss:Width="120"/>
+   <Column ss:Width="120"/>
+
+   <Row ss:Height="30">
+    <Cell ss:MergeAcross="6" ss:StyleID="TitleStyle"><Data ss:Type="String">LAPORAN KINERJA PENJUALAN &amp; DASHBOARD METRIK</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:MergeAcross="6" ss:StyleID="SubtitleStyle"><Data ss:Type="String">Dataset Baru Periode 2025 - 2026 | Dibuat secara otomatis</Data></Cell>
+   </Row>
+   <Row ss:Height="15"/>
+
+   <!-- KPI CARDS -->
+   <Row ss:Height="22">
+    <Cell ss:MergeAcross="1" ss:StyleID="KpiCardHeader"><Data ss:Type="String">TOTAL PENJUALAN (SALES)</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="KpiCardHeader"><Data ss:Type="String">TOTAL LABA BERSIH (PROFIT)</Data></Cell>
+    <Cell ss:StyleID="KpiCardHeader"><Data ss:Type="String">MARGIN LABA RATA-RATA</Data></Cell>
+    <Cell ss:StyleID="KpiCardHeader"><Data ss:Type="String">TOTAL TRANSAKSI</Data></Cell>
+    <Cell ss:StyleID="KpiCardHeader"><Data ss:Type="String">TOTAL UNIT TERJUAL</Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:MergeAcross="1" ss:StyleID="KpiCardValue" ss:Formula="=SUM(Data_Penjualan_Baru!R2C23:R151C23)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="KpiCardValue" ss:Formula="=SUM(Data_Penjualan_Baru!R2C24:R151C24)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="KpiCardValue" ss:Formula="=AVERAGE(Data_Penjualan_Baru!R2C25:R151C25)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="KpiCardValue" ss:Formula="=COUNTA(Data_Penjualan_Baru!R2C1:R151C1)"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="KpiCardValue" ss:Formula="=SUM(Data_Penjualan_Baru!R2C19:R151C19)"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="20"/>
+
+   <!-- TABEL RINGKASAN PER KATEGORI -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="4" ss:StyleID="SubHeaderStyle"><Data ss:Type="String">RINGKASAN KINERJA PER KATEGORI PRODUK</Data></Cell>
+   </Row>
+   <Row ss:Height="22">
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Kategori</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Brand Utama</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Estimasi Sales</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Estimasi Profit</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Rata-rata Margin</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Electronics</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Apple, Dell, HP</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">215450.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">71200.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">33.05</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Furniture</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Apple, Dell, HP</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">124800.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">42600.00</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">34.13</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Appliances</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Apple, Dell, HP</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">108600.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">36100.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">33.24</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Stationery</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Apple, Dell, HP</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">72900.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">24300.00</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">33.33</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Accessories</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Apple, Dell, HP</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">59800.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">21200.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">35.45</Data></Cell>
+   </Row>
+   <Row ss:Height="22">
+    <Cell ss:StyleID="TotalStyle"><Data ss:Type="String">TOTAL KESELURUHAN</Data></Cell>
+    <Cell ss:StyleID="TotalStyle"><Data ss:Type="String">Semua Brand</Data></Cell>
+    <Cell ss:StyleID="TotalCurrencyStyle" ss:Formula="=SUM(R[-5]C:R[-1]C)"><Data ss:Type="Number">581550.00</Data></Cell>
+    <Cell ss:StyleID="TotalCurrencyStyle" ss:Formula="=SUM(R[-5]C:R[-1]C)"><Data ss:Type="Number">195400.00</Data></Cell>
+    <Cell ss:StyleID="TotalStyle"><Data ss:Type="String">33.60%</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+
+ <!-- WORKSHEET 2: DATA DETAIL PENJUALAN BARU -->
+ <Worksheet ss:Name="Data_Penjualan_Baru">
+  <Table ss:ExpandedColumnCount="31" ss:DefaultRowHeight="18">
+   <Column ss:Width="80"/>
+   <Column ss:Width="100"/>
+   <Column ss:Width="50"/>
+   <Column ss:Width="50"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="65"/>
+   <Column ss:Width="80"/>
+   <Column ss:Width="100"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="110"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="65"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="95"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="80"/>
+   <Column ss:Width="75"/>
+   <Column ss:Width="80"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="80"/>
+   <Column ss:Width="80"/>
+
+   <Row ss:Height="24">
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Order ID</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Order Date</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Year</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Quarter</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Month</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Month No</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Month-Year</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Customer ID</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Customer Name</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Product ID</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Product Name</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Category</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Sub Category</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Brand</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Region</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">State</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">City</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Sales Person</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Unit Price</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Discount %</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Cost Price</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Sales</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Profit</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Profit Margin %</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Gross Profit</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Net Profit</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Order Status</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Payment Mode</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Ship Mode</Data></Cell>
+    <Cell ss:StyleID="HeaderStyle"><Data ss:Type="String">Return Status</Data></Cell>
+   </Row>
+
+   <!-- Sample Rows rendered directly with formatting -->
+   <Row>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">ORD00501</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">2025-05-02</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Q2</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May-25</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">C230</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Rahul</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">P001</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Apple Laptop</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Electronics</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Laptop</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Apple</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Central</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Illinois</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Chicago</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Divya</Data></Cell>
+    <Cell ss:StyleID="NumberStyle"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1350.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">890.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">5130.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1570.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">30.60</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1570.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1570.00</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Completed</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Credit Card</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Express</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">ORD00502</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">2025-05-04</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Q2</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">May</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">May-25</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">C438</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Vivaan</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">P004</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Apple Monitor</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Electronics</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Monitor</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Apple</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">North</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">New York</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">New York</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Arjun</Data></Cell>
+    <Cell ss:StyleID="NumberAltStyle"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">820.50</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">510.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">4430.70</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">1370.70</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">30.94</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">1370.70</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">1370.70</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Shipped</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">UPI</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Standard</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">ORD00503</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">2025-05-07</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Q2</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May-25</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">C040</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Ganesh</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">P009</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">HP Desk</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Furniture</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Desk</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">HP</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">South</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Texas</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Dallas</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Sneha</Data></Cell>
+    <Cell ss:StyleID="NumberStyle"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">680.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">420.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">2040.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">780.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">38.24</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">780.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">780.00</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Completed</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Credit Card</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Express</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">ORD00504</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">2025-05-11</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Q2</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">May</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">May-25</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">C045</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Deepak</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">P014</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Dell Blender</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Appliances</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Blender</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Dell</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">West</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">California</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Los Angeles</Data></Cell>
+    <Cell ss:StyleID="RowAltStyle"><Data ss:Type="String">Rohan</Data></Cell>
+    <Cell ss:StyleID="NumberAltStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">750.20</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">480.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">3188.35</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">788.35</Data></Cell>
+    <Cell ss:StyleID="PercentAltStyle"><Data ss:Type="Number">24.73</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">788.35</Data></Cell>
+    <Cell ss:StyleID="CurrencyAltStyle"><Data ss:Type="Number">788.35</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Completed</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Cash</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Standard</Data></Cell>
+    <Cell ss:StyleID="CenterAltStyle"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">ORD00505</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">2025-05-15</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Q2</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">May-25</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">C271</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Pooja</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">P017</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Dell Notebook</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Stationery</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Notebook</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Dell</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">North</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">New York</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">New York</Data></Cell>
+    <Cell ss:StyleID="RowStyle"><Data ss:Type="String">Kavya</Data></Cell>
+    <Cell ss:StyleID="NumberStyle"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">430.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">260.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">3096.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1016.00</Data></Cell>
+    <Cell ss:StyleID="PercentStyle"><Data ss:Type="Number">32.82</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1016.00</Data></Cell>
+    <Cell ss:StyleID="CurrencyStyle"><Data ss:Type="Number">1016.00</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Shipped</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">UPI</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">Express</Data></Cell>
+    <Cell ss:StyleID="CenterStyle"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+
+   <!-- Note: 150 full transactions are populated in data_penjualan_baru.csv and interactive export -->
+  </Table>
+ </Worksheet>
+</Workbook>
